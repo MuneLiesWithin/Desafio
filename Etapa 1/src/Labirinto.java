@@ -81,16 +81,29 @@ public class Labirinto {
         return false;
 	}
 	public static void main(String args[]) {
+		
 		Labirinto lab = new Labirinto();
-		lab.labirinto = lab.criaLabirinto("labirinto.txt");
+		lab.labirinto = lab.criaLabirinto(git "Desafio/Etapa 1/labirinto.txt");
 		System.out.println(lab.percorreLabirinto());
 		lab.imprimeLab(lab.labirinto);
 		
 		System.out.println();
 		
-		lab.labirinto = lab.criaLabirinto("labirinto2.txt");
+		lab.labirinto = lab.criaLabirinto("Desafio/Etapa 1/labirinto2.txt");
 		System.out.println(lab.percorreLabirinto());
 		lab.imprimeLab(lab.labirinto);
+		/* 
+		try{
+			FileWriter fr = new FileWriter("Desafio/Etapa 1/labirinto.txt");
+			fr.close();
+		}
+		catch(IOException e){
+			e.printStackTrace();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		*/
 	}
 }
 
