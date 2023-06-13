@@ -83,7 +83,7 @@ public class Labirinto {
 	public static void main(String args[]) {
 		
 		Labirinto lab = new Labirinto();
-		lab.labirinto = lab.criaLabirinto(git "Desafio/Etapa 1/labirinto.txt");
+		lab.labirinto = lab.criaLabirinto("Desafio/Etapa 1/labirinto.txt");
 		System.out.println(lab.percorreLabirinto());
 		lab.imprimeLab(lab.labirinto);
 		
