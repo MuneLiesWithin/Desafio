@@ -5,7 +5,7 @@ public class PrincipalCandidato {
 	private static String sorteioNome() {
 		String [] nomes = null;
 		try {
-			FileReader fr = new FileReader("nomes.txt");
+			FileReader fr = new FileReader("Desafio/Etapa 2/nomes.txt");
 			BufferedReader in = new BufferedReader(fr);
 			nomes = new String[100];
 			for(int i = 0; i < nomes.length; i++) {
@@ -24,7 +24,7 @@ public class PrincipalCandidato {
 	private static String sorteioPartido() {
 		String [] partidos = null;
 		try {
-			FileReader fr = new FileReader("partidos.txt");
+			FileReader fr = new FileReader("Desafio/Etapa 2/partidos.txt");
 			BufferedReader in = new BufferedReader(fr);
 			partidos = new String[100];
 			for(int i = 0; i < partidos.length; i++) {
